@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../html/menu.html">
+    <link rel="stylesheet" href="../css/w3.css">
+</head>
+
+<body>
+
+    <main>
+
+        <nav>
+            <img src="../user.png" alt="">
+            <form name="myform" method="post" action="../html/menu.html"
+                onsubmit="return validateform()">
+                <div>
+                    <input type="email" placeholder="Մուտքանուն">
+                    <input type="password" placeholder="Գաղտնաբառ" id="in">
+                    <input type="submit" value="Մտնել" id="in2">
+                </div>
+            </form>
+            <a href="#">Օգնություն</a>
+        </nav>
+
+    </main>
+
+    <script>
+
+        function validateform() {
+            var name = document.myform.name.value;
+            var password = document.myform.password.value;
+
+            if (name == null || name == "") {
+                alert("Name can't be blank");
+                return false;
+            } else if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+        }  
+    </script>
+
+</body>
+
+</html>
