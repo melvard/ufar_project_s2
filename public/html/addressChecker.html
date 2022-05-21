@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/addressChecker.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div id="d">
+            <p><b>Ստուգման Հասցե</b></p>
+            <table>
+                <tr>
+                    <td colspan="2">Փողոց (Թաղամաս)</td>
+                    <td colspan="2"><input type="text" id="i"></td>
+                </tr>
+                <tr>
+                    <td>Շարք</td>
+                    <td><input type="text"></td>
+                    <td>Շենք</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Բնակարան</td>
+                    <td><input type="text"></td>
+                    <td>Նրբանցք</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Փակուղի</td>
+                    <td><input type="text"></td>
+                    <td>Հարկ</td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </div>
+        <div><button onclick=openMessageTab()>Փնտրում</button></div>
+</body>
+</nav>
+
+
+<script>
+    function openMessageTab() {
+        window.open("../html/checkPopupMessage.html",  "_self");
+    }
+</script>
+
+</html>
